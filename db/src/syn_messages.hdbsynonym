@@ -1,0 +1,9 @@
+{
+  "Syn_Messages": {
+    "target": {
+      "object": "Messages",
+      "schema": "MP_1",
+      "database": "HN6"
+    }
+  }
+}
