@@ -3,27 +3,21 @@ _schema-version: '2.1'
 version: 0.0.1
 
 modules:
- - name: db
+ - name: DSALAVEI_mc_db
    type: hdb
    path: db
    requires:
-    - name: hdi_db
+    - name: DSALAVEI-MessageConsumer-hdi_db-Service
       properties:
         TARGET_CONTAINER: ~{hdi-container-name}
-
-
-
-    - name: cross-container-service-1
+    - name: DSALAVEI-cross-container-service-1
       group: SERVICE_REPLACEMENTS
-
       properties:
         key: ServiceName_1
         service: ~{the-service-name}
-                          
-
 
 resources:
- - name: hdi_db
+ - name: DSALAVEI-MessageConsumer-hdi_db-Service
    parameters:
       config:
          schema: MC
@@ -31,10 +25,9 @@ resources:
       hdi-container-name: ${service-name}
    type: com.sap.xs.hdi-container
 
- - name: cross-container-service-1
+ - name: DSALAVEI-cross-container-service-1
    parameters:
-      service-name: DSALAVEI-0m0e7eihcorw5ihp-MessageProducer-hdi_db
+      service-name: DSALAVEI-MessageProducer-hdi_db-Service
    properties:
       the-service-name: ${service-name}
    type: org.cloudfoundry.existing-service
-

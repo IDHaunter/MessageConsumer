@@ -2,28 +2,28 @@
   "Syn_Messages": {
     "target": {
       "object": "Messages",
-      "schema": "MP_1",
+      "schema": "MP",
       "database": "HN6"
     }
   },
   "Syn_MessagesNotProcessedView": {
     "target": {
       "object": "Messages.NotProcessedView",
-      "schema": "MP_1",
+      "schema": "MP",
       "database": "HN6"
     }
   },
   "Syn_Prc_MessagesGet": {
     "target": {
       "object": "Messages.Get",
-      "schema": "MP_1",
+      "schema": "MP",
       "database": "HN6"
     }
   },
   "Syn_Prc_MessagesUpdate": {
     "target": {
       "object": "Messages.Update",
-      "schema": "MP_1",
+      "schema": "MP",
       "database": "HN6"
     }
   }
